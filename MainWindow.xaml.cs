@@ -75,5 +75,11 @@ namespace MediaPlayer
         {
             Environment.Exit(0); // 關閉整個程式的指令
         }
+
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            MedShow.Volume = sliVolume.Value; // 設定聲音大小
+            //txtFilePath.Text = MedShow.Volume.ToString();
+        }
     }
 }
