@@ -27,7 +27,8 @@ namespace MediaPlayer
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            // 設定影音播放狀態為「Play」，將狀態設定到目前的讀取行為
+            MedShow.LoadedBehavior = MediaState.Play;
         }
 
         private void btnOpenFile_Click(object sender, RoutedEventArgs e)
@@ -56,6 +57,23 @@ namespace MediaPlayer
                 // 將影音進行播放
                 MedShow.LoadedBehavior = MediaState.Play;
             }
+        }
+
+        private void btnPause_Click(object sender, RoutedEventArgs e)
+        {
+            // 設定影音播放狀態為「Pause」，將狀態設定到目前的讀取行為
+            MedShow.LoadedBehavior = MediaState.Pause;
+        }
+
+        private void btnStop_Click(object sender, RoutedEventArgs e)
+        {
+            // 設定影音播放狀態為「Stop」，將狀態設定到目前的讀取行為
+            MedShow.LoadedBehavior = MediaState.Stop;
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0); // 關閉整個程式的指令
         }
     }
 }
