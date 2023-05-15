@@ -103,7 +103,8 @@ namespace MediaPlayer
             sliProgress.Value = MedShow.Position.TotalMilliseconds;
         }
 
-        private void sliProgress_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+
+        private void sliProgress_PreviewMouseLeftButtonUp_1(object sender, MouseButtonEventArgs e)
         {
             int SliderValue = (int)sliProgress.Value; // 還記得轉型嗎？
 
@@ -111,4 +112,4 @@ namespace MediaPlayer
             MedShow.Position = ts; // 調整影片播放進度到新的時間
         }
     }
-}
+  }

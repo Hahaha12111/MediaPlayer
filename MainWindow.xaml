@@ -20,7 +20,7 @@
         <MediaElement x:Name="MedShow" HorizontalAlignment="Left" Height="217" Margin="153,92,0,0" VerticalAlignment="Top" Width="475" OpacityMask="#FFD02525" MediaOpened="MedShow_MediaOpened"/>
         <TextBlock x:Name="txtFilePath" HorizontalAlignment="Left" Margin="93,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="487" Height="29" Background="#FFF1F1F1"/>
         <Slider x:Name="sliVolume" HorizontalAlignment="Left" Margin="617,376,0,0" VerticalAlignment="Top" Width="120" ValueChanged="Slider_ValueChanged" LargeChange="0.05" Maximum="1" TickFrequency="0.01" Value="0.5"/>
-        <Slider x:Name="sliProgress" HorizontalAlignment="Left" Margin="126,329,0,0" VerticalAlignment="Top" Width="526"/>
+        <Slider x:Name="sliProgress" HorizontalAlignment="Left" Margin="126,329,0,0" VerticalAlignment="Top" Width="526" PreviewMouseLeftButtonUp="sliProgress_PreviewMouseLeftButtonUp_1"/>
         <Button x:Name="btnPlay" Content="播放" HorizontalAlignment="Left" Margin="93,370,0,0" VerticalAlignment="Top" Width="50" Height="30" Background="#FFB450E5" Click="btnPlay_Click"/>
 
     </Grid>
