@@ -79,6 +79,7 @@ namespace MediaPlayer
         {
             MedShow.Volume = sliVolume.Value; // 設定聲音大小
             //txtFilePath.Text = MedShow.Volume.ToString();
+
         }
 
         TimeSpan TimePosition; // 宣告一個時間間格
@@ -101,6 +102,7 @@ namespace MediaPlayer
         {
             // 小程序，更新目前影片播放進度
             sliProgress.Value = MedShow.Position.TotalMilliseconds;
+            txtTime.Text = MedShow.Position.ToString("h'h 'm'm 's's'");
         }
 
 
